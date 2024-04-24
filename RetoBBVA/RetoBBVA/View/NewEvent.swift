@@ -11,6 +11,21 @@ struct NewEvent: View {
     @State private var evento: String = ""
     @State private var inicio = Date()
     @State private var fin = Date()
+    @State private var integrantesSeleccionados: [String] = []
+    
+    func crearEvento() {
+        // Convertir las fechas a string
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        let inicioString = formatter.string(from: inicio)
+        let finString = formatter.string(from: fin)
+        
+        // Imprimir la información
+        print("Nombre del evento:", evento)
+        print("Fecha de inicio:", inicioString)
+        print("Fecha de fin:", finString)
+        print("Integrantes seleccionados:", integrantesSeleccionados)
+    }
     
     var body: some View {
         VStack {
@@ -80,7 +95,7 @@ struct NewEvent: View {
                                     .font(.system(size: 18, weight: .bold))
                                     .foregroundStyle(Color(hex: "64c9cc"))
                             }
-
+                            
                         }
                         Spacer()
                     }
@@ -88,7 +103,7 @@ struct NewEvent: View {
                 }
                 Spacer()
                     .frame(height: 20)
-
+                
                 
                 
                 
@@ -109,23 +124,23 @@ struct NewEvent: View {
                     
                     
                     VStack(alignment: .trailing, spacing: 20){
-                        PersonButton(personName: "Mariana S", accountType: "Mariana S R", accountNumber: "1234 5678 9123 4567 8910", imgColor: "9381FF") {
+                        PersonButton(personName: "Mariana S", accountType: "Mariana S R", accountNumber: "1234 5678 9123 4567 8910", imgColor: "9381FF", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Mariana S")
                         }
-                        PersonButton(personName: "Cristina Hdz", accountType: "Cristina H P", accountNumber: "5678 9123 4567 8910 1234", imgColor: "FFC43D") {
+                        PersonButton(personName: "Cristina Hdz", accountType: "Cristina H P", accountNumber: "5678 9123 4567 8910 1234", imgColor: "FFC43D", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Cristina Hdz")
                         }
-                        PersonButton(personName: "Carmina L", accountType: "Carmina L P", accountNumber: "1234 5678 9123 8910 4567", imgColor: "64C9CC") {
+                        PersonButton(personName: "Carmina L", accountType: "Carmina L P", accountNumber: "1234 5678 9123 8910 4567", imgColor: "64C9CC", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Carmina L")
                         }
-                        PersonButton(personName: "Jorge L", accountType: "Jorge L M", accountNumber: "1234 5678  4567 8910 9123", imgColor: "CF5C36") {
+                        PersonButton(personName: "Jorge L", accountType: "Jorge L M", accountNumber: "1234 5678  4567 8910 9123", imgColor: "CF5C36", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Jorge L")
                         }
-                        PersonButton(personName: "Aaron I", accountType: "Aaron I I", accountNumber: "4567 1234 5678 9123 8910", imgColor: "E6CCBE") {
+                        PersonButton(personName: "Aaron I", accountType: "Aaron I I", accountNumber: "4567 1234 5678 9123 8910", imgColor: "E6CCBE", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Aaron I")
                         }
@@ -135,8 +150,19 @@ struct NewEvent: View {
                     
                     
                 }
+                Spacer()
+                    .frame(height: 40)
                 
-                
+                Button(action:{
+                    crearEvento()
+                }){
+                    Text("Crear evento")
+                        .foregroundColor(Color.white)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 13)
+                        .font(.system(size: 17, weight: .bold))
+                        .background(Color(hex: "2768b3"))
+                }
                 
                 
                 
@@ -158,14 +184,17 @@ struct PersonButton: View {
     let accountType: String
     let accountNumber: String
     let imgColor: String
+    @Binding var integrantesSeleccionados: [String]
     let action: () -> Void
     
     @State private var isPressed = false
+
     
     var body: some View {
         HStack {
             Button(action: {
                 self.isPressed = true
+                self.integrantesSeleccionados.append(personName)
                 self.action()
                 
             }) {
