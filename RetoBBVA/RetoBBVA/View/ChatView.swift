@@ -56,11 +56,12 @@ struct ChatView: View {
                 
                 HStack {
                     
-                    TextField("Escribe...", text: $apiModel.newMessage, axis: .vertical)
+                    TextField("Escribe tu duda", text: $apiModel.newMessage, axis: .vertical)
                         .lineLimit(5)
                         .padding(.horizontal, 10)
                         .padding(.vertical, 8)
-                        .background(Color(.systemGray5))
+                        .background(Colors.grayLight)
+                        .cornerRadius(1)
                     
                     
                     Button(action: {

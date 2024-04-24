@@ -38,7 +38,7 @@ struct MessageView: View {
                 Text(message.messageBody).padding(15)
                     .foregroundColor(.white)
                     .background(message.type == .bot ? Colors.primaryDark : Colors.primaryLight)
-                    .cornerRadius(10)
+                    .cornerRadius(1)
                     
             
                 Text(dateFormatter.string(from: message.time)).font(.caption).foregroundColor(.gray)

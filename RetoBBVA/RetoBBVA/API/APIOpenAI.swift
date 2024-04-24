@@ -16,7 +16,7 @@ class APIOpenAI: ObservableObject {
     //@Published var messages = testchat
     
     @Published var messages = [
-        Message(type: .bot, messageBody: "Hola \(apiConfig.username).  \nSoy \(apiConfig.friendname), ¿Cómo va todo?")
+        Message(type: .bot, messageBody: "Hola \(apiConfig.username).  \nSoy \(apiConfig.friendname), ¿Qué tema de educación financiera te gustaría conocer?")
      ]
     @Published var newMessage : String = ""
     
@@ -37,7 +37,7 @@ class APIOpenAI: ObservableObject {
             self.messages.append(aMessage)
         }
         let response = try await API.sendMessageStream(text: newMessage,
-                                                       systemText: "Eres asistente virtual especializado experto en BBVA que tiene como proposito ayudar, educar e informar de manera fácil de entender (a veces usando ejemplos), los usuarios jovenes de 18-25 años acerca de su salud financiera y que esta les permita estar más informados y tomar una buena decisión. El usuario se llama \"\(apiConfig.username)\", tú te llamas \"\(apiConfig.friendname)\" y ya no tienes que saludarlo al inicio",
+                                                       systemText: "Eres un asistente virtual especializado experto en BBVA que tiene como proposito ayudar, educar e informar de manera fácil de entender (a veces usando ejemplos), los usuarios jovenes de 18-25 años acerca de su salud financiera y que esta les permita estar más informados y tomar una buena decisión. El usuario se llama \"\(apiConfig.username)\", tú te llamas \"\(apiConfig.friendname)\" y ya no tienes que saludarlo al inicio",
                                                        temperature: 0.5)
         
         
