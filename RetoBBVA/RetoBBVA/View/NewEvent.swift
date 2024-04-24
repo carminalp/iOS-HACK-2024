@@ -128,22 +128,27 @@ struct NewEvent: View {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Mariana S")
                         }
+                        Divider()
                         PersonButton(personName: "Cristina Hdz", accountType: "Cristina H P", accountNumber: "5678 9123 4567 8910 1234", imgColor: "FFC43D", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Cristina Hdz")
                         }
+                        Divider()
                         PersonButton(personName: "Carmina L", accountType: "Carmina L P", accountNumber: "1234 5678 9123 8910 4567", imgColor: "64C9CC", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Carmina L")
                         }
+                        Divider()
                         PersonButton(personName: "Jorge L", accountType: "Jorge L M", accountNumber: "1234 5678  4567 8910 9123", imgColor: "CF5C36", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Jorge L")
                         }
+                        Divider()
                         PersonButton(personName: "Aaron I", accountType: "Aaron I I", accountNumber: "4567 1234 5678 9123 8910", imgColor: "E6CCBE", integrantesSeleccionados: $integrantesSeleccionados) {
                             // Acción al presionar el botón para Cristina Hdz
                             print("Se ha presionado el botón de Aaron I")
                         }
+                        Divider()
                         
                     }
                     .padding(.horizontal, 40)

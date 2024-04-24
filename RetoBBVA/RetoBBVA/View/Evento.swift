@@ -66,6 +66,30 @@ struct Evento: View {
                 }
                 
                 
+                VStack {
+                    HStack{
+                        Text("Fecha")
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundStyle(Color.black)
+                        Spacer()
+                        Text("Gasto")
+                            .font(.system(size: 18, weight: .medium))
+                            .foregroundStyle(Color.black)
+                        Spacer()
+                        Text("Valor")
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundStyle(Color.black)
+                    }
+                    Spacer()
+                        .frame(height: 10)
+                    expenses(expenseName: "Hotel", value: "5643", date: "18-02-2024")
+                    expenses(expenseName: "Comida", value: "7643", date: "18-02-2024")
+                    expenses(expenseName: "Vuelos", value: "16043", date: "18-02-2024")
+                    expenses(expenseName: "Ropa", value: "1423", date: "18-02-2024")
+                }.padding(.horizontal,50)
+                
+                
+                
                 Button(action: {}){
                     CircleImage(icon: "plus", color: Color(hex: "64C9CC"))
                 }
@@ -78,7 +102,6 @@ struct Evento: View {
         
     }
 }
-
 
 struct valor: View {
     let valor: String
@@ -115,6 +138,34 @@ struct integranteDeudor: View {
         }
     }
 }
+
+struct expenses: View {
+    let expenseName: String
+    let value: String
+    let date: String
+
+    
+    var body: some View {
+
+        HStack {
+            Text(date)
+                .font(.system(size: 16, weight: .light))
+                .foregroundStyle(Color.black)
+            Spacer()
+                .frame(width: 40)
+            Text(expenseName)
+                .font(.system(size: 18, weight: .medium))
+                .foregroundStyle(Color.black)
+            Spacer()
+            Text("$\(value)")
+                .font(.system(size: 16, weight: .light))
+                .foregroundStyle(Color.black)
+        }
+    
+        
+    }
+}
+
 
 
 #Preview {
