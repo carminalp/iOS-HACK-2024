@@ -16,7 +16,7 @@ struct TabMenu: View {
                         }
 
                     
-                    Home()
+                    ChatView()
                         .tabItem {
                             Label("Salud Financiera", systemImage: "arrow.up.heart.fill")
                         }

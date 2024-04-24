@@ -12,6 +12,7 @@ struct NewEvent: View {
     @State private var inicio = Date()
     @State private var fin = Date()
     @State private var integrantesSeleccionados: [String] = []
+    @State private var navigateToEvent = false
     
     func crearEvento() {
         // Convertir las fechas a string
@@ -160,6 +161,8 @@ struct NewEvent: View {
                 
                 Button(action:{
                     crearEvento()
+                    self.navigateToEvent = true
+                    
                 }){
                     Text("Crear evento")
                         .foregroundColor(Color.white)
@@ -168,7 +171,9 @@ struct NewEvent: View {
                         .font(.system(size: 17, weight: .bold))
                         .background(Color(hex: "2768b3"))
                 }
-                
+                NavigationLink(destination: Event(), isActive: $navigateToEvent) {
+                                EmptyView()
+                }
                 
                 
                 

@@ -37,7 +37,7 @@ class APIOpenAI: ObservableObject {
             self.messages.append(aMessage)
         }
         let response = try await API.sendMessageStream(text: newMessage,
-                                                       systemText: "Eres un asistente virtual especializado experto en BBVA que tiene como proposito ayudar, educar e informar de manera fácil de entender (a veces usando ejemplos), los usuarios jovenes de 18-25 años acerca de su salud financiera y que esta les permita estar más informados y tomar una buena decisión. El usuario se llama \"\(apiConfig.username)\", tú te llamas \"\(apiConfig.friendname)\", ya no tienes que saludarlo al inicio",
+                                                       systemText: "Eres un asistente virtual especializado experto en BBVA que tiene como proposito ayudar, educar e informar de manera fácil de entender (a veces usando ejemplos), los usuarios jovenes de 18-25 años acerca de su salud financiera y que esta les permita estar más informados y tomar una buena decisión. El usuario se llama \"\(apiConfig.username)\", tú te llamas \"\(apiConfig.friendname)\", ya no tienes que saludarlo al inicio, es mandatorio que la respuesta sea de máximo 80 palabras",
                                                        temperature: 0.5)
         
         
