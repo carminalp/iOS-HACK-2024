@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0AF9592BD9858700326850 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF9582BD9858700326850 /* Home.swift */; };
+		FB0AF95B2BD9862900326850 /* Oportunities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF95A2BD9862900326850 /* Oportunities.swift */; };
+		FB0AF95D2BD9865A00326850 /* NewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF95C2BD9865A00326850 /* NewEvent.swift */; };
+		FB0AF95F2BD9868B00326850 /* tabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF95E2BD9868B00326850 /* tabMenu.swift */; };
 		FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156612BD960F700965B49 /* RetoBBVAApp.swift */; };
 		FBB156642BD960F700965B49 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156632BD960F700965B49 /* ChatView.swift */; };
 		FBB156662BD960F900965B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB156652BD960F900965B49 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB0AF9582BD9858700326850 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FB0AF95A2BD9862900326850 /* Oportunities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oportunities.swift; sourceTree = "<group>"; };
+		FB0AF95C2BD9865A00326850 /* NewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEvent.swift; sourceTree = "<group>"; };
+		FB0AF95E2BD9868B00326850 /* tabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabMenu.swift; sourceTree = "<group>"; };
 		FBB1565E2BD960F700965B49 /* RetoBBVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoBBVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB156612BD960F700965B49 /* RetoBBVAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetoBBVAApp.swift; sourceTree = "<group>"; };
 		FBB156632BD960F700965B49 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -66,6 +74,7 @@
 				FBB156702BD966FA00965B49 /* API */,
 				FBB1566F2BD966E200965B49 /* View */,
 				FBB156612BD960F700965B49 /* RetoBBVAApp.swift */,
+				FB0AF95E2BD9868B00326850 /* tabMenu.swift */,
 				FBB156652BD960F900965B49 /* Assets.xcassets */,
 				FBB156672BD960F900965B49 /* Preview Content */,
 				FBB1567C2BD96B3800965B49 /* Colors.swift */,
@@ -86,6 +95,9 @@
 			children = (
 				FBB156632BD960F700965B49 /* ChatView.swift */,
 				FBB1567A2BD96ADD00965B49 /* MessageView.swift */,
+				FB0AF9582BD9858700326850 /* Home.swift */,
+				FB0AF95A2BD9862900326850 /* Oportunities.swift */,
+				FB0AF95C2BD9865A00326850 /* NewEvent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,12 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0AF95B2BD9862900326850 /* Oportunities.swift in Sources */,
 				FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */,
 				FBB156742BD967AE00965B49 /* APIOpenAI.swift in Sources */,
+				FB0AF95D2BD9865A00326850 /* NewEvent.swift in Sources */,
 				FBB156642BD960F700965B49 /* ChatView.swift in Sources */,
 				FBB1567D2BD96B3800965B49 /* Colors.swift in Sources */,
 				FBB156792BD9689100965B49 /* Message.swift in Sources */,
+				FB0AF95F2BD9868B00326850 /* tabMenu.swift in Sources */,
 				FBB156722BD9677D00965B49 /* DataAPI.swift in Sources */,
+				FB0AF9592BD9858700326850 /* Home.swift in Sources */,
 				FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
