@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB7C19F52BD9A11600F6215F /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C19F42BD9A11600F6215F /* TicketView.swift */; };
+		FB7C19F72BD9AD1F00F6215F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C19F62BD9AD1F00F6215F /* CameraView.swift */; };
 		FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156612BD960F700965B49 /* RetoBBVAApp.swift */; };
 		FBB156642BD960F700965B49 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156632BD960F700965B49 /* ChatView.swift */; };
 		FBB156662BD960F900965B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB156652BD960F900965B49 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB7C19F42BD9A11600F6215F /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		FB7C19F62BD9AD1F00F6215F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		FBB1565E2BD960F700965B49 /* RetoBBVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoBBVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB156612BD960F700965B49 /* RetoBBVAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetoBBVAApp.swift; sourceTree = "<group>"; };
 		FBB156632BD960F700965B49 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			children = (
 				FBB156632BD960F700965B49 /* ChatView.swift */,
 				FBB1567A2BD96ADD00965B49 /* MessageView.swift */,
+				FB7C19F42BD9A11600F6215F /* TicketView.swift */,
+				FB7C19F62BD9AD1F00F6215F /* CameraView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			files = (
 				FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */,
 				FBB156742BD967AE00965B49 /* APIOpenAI.swift in Sources */,
+				FB7C19F52BD9A11600F6215F /* TicketView.swift in Sources */,
+				FB7C19F72BD9AD1F00F6215F /* CameraView.swift in Sources */,
 				FBB156642BD960F700965B49 /* ChatView.swift in Sources */,
 				FBB1567D2BD96B3800965B49 /* Colors.swift in Sources */,
 				FBB156792BD9689100965B49 /* Message.swift in Sources */,
@@ -319,6 +327,7 @@
 				DEVELOPMENT_TEAM = 9MQSX62K58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan ticket";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -349,6 +358,7 @@
 				DEVELOPMENT_TEAM = 9MQSX62K58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan ticket";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
