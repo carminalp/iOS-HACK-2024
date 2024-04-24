@@ -18,7 +18,7 @@ struct ChatView: View {
             VStack {
                 
                 Color.clear
-                    .frame(height: 80)
+                    .frame(height: 2)
                 
                 ScrollViewReader { sview in
                     ScrollView {
