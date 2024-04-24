@@ -79,11 +79,7 @@ struct ChatView: View {
                     }
                     .padding(.horizontal, 10)
                 }.padding()
-                
-                
-                Color.clear
-                    .frame(height: 150)
-                
+                            
             }
             
         }

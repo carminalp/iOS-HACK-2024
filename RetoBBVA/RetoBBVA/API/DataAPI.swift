@@ -17,8 +17,11 @@ struct chatInfo {
 
 }
 
+// ASISTENTE AZUL
+// Mentor azul
+// Guía --> orientador --> asesor --> consultor
 
-let apiConfig = chatInfo(username: "Alberto", friendname: "BBVA")
+let apiConfig = chatInfo(username: "Alberto", friendname: "Consultor BBVA")
 
 let api: DataAPI = DataAPI(key: "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")
 

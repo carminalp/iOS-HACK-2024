@@ -27,7 +27,7 @@ struct MessageView: View {
                 Image("Assistant")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 30)
+                    .frame(width: 40)
                     .padding(.bottom, 22)
             } else {
                 Spacer(minLength: 40)
@@ -50,7 +50,7 @@ struct MessageView: View {
                 Image("User")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 35)
+                    .frame(width: 40)
                     .clipShape(Circle())
                     .padding(.bottom, 20)
             } else {
