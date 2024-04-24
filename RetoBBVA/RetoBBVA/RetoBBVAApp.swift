@@ -11,7 +11,7 @@ import SwiftUI
 struct RetoBBVAApp: App {
     var body: some Scene {
         WindowGroup {
-            TicketView()
+            TabMenu()
         }
     }
 }
