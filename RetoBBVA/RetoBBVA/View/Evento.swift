@@ -45,7 +45,7 @@ struct Evento: View {
                     valor(valor: "100", centavos: "47", tipoValor: "real")
                     Spacer()
                         .frame(height: 20)
-                    valor(valor: "200", centavos: "30", tipoValor: "esperado")
+                    valor(valor: "200", centavos: "30", tipoValor: "estimado")
                     Spacer()
                         .frame(height: 30)
                     integranteDeudor(personName: "Alberto", quantity: "100")
