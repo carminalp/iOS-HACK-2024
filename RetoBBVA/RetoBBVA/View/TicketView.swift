@@ -55,7 +55,7 @@ struct TicketView: View {
             }, label: {
                 HStack{
                     Image(systemName: "camera")
-                    Text("Re-take picture")
+                    Text("Repetir foto")
                 }
             })
             
