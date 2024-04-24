@@ -21,6 +21,7 @@
 		FBB156792BD9689100965B49 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156782BD9689100965B49 /* Message.swift */; };
 		FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1567A2BD96ADD00965B49 /* MessageView.swift */; };
 		FBB1567D2BD96B3800965B49 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1567C2BD96B3800965B49 /* Colors.swift */; };
+		FBE6CC5D2BD9A38F00A7EC33 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6CC5C2BD9A38F00A7EC33 /* Evento.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FBB156782BD9689100965B49 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FBB1567A2BD96ADD00965B49 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = "RetoBBVA/Preview Content/MessageView.swift"; sourceTree = SOURCE_ROOT; };
 		FBB1567C2BD96B3800965B49 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FBE6CC5C2BD9A38F00A7EC33 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				FB0AF9582BD9858700326850 /* Home.swift */,
 				FB0AF95A2BD9862900326850 /* Oportunities.swift */,
 				FB0AF95C2BD9865A00326850 /* NewEvent.swift */,
+				FBE6CC5C2BD9A38F00A7EC33 /* Evento.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE6CC5D2BD9A38F00A7EC33 /* Evento.swift in Sources */,
 				FB0AF95B2BD9862900326850 /* Oportunities.swift in Sources */,
 				FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */,
 				FBB156742BD967AE00965B49 /* APIOpenAI.swift in Sources */,
