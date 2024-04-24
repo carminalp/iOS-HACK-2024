@@ -108,49 +108,32 @@ struct NewEvent: View {
                         .frame(height: 20)
                     
                     
-                    HStack{
-                        HStack {
-                            Button(action: {
-                                // Acción al presionar el botón
-                            }) {
-                                HStack {
-                                    Image(systemName: "person.fill")
-                                        .font(.title)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 50, height: 50)
-                                        .background(Color(hex: "9381FF"))
-                                        .clipShape(Circle())
-                                    Spacer()
-                                        .frame(width: 15)
-                                    VStack(alignment: .leading) {
-                                        Text("Cristina Hdz")
-                                            .font(.system(size: 18, weight: .medium))
-                                            .foregroundStyle(Color.black)
-                                        
-                                        Text("Cristina H P")
-                                            .font(.system(size: 16, weight: .light))
-                                            .textCase(.uppercase)
-                                            .foregroundStyle(Color.black)
-                                        Spacer()
-                                            .frame(height: 10)
-                                        Text("Cuenta BBVA")
-                                            .font(.system(size: 16, weight: .light))
-                                            .foregroundStyle(Color.gray)
-                                        Text("1234 5678 9123 4567 8910")
-                                            .font(.system(size: 16, weight: .light))
-                                            .foregroundStyle(Color.black)
-                                    }
-                                }
-                                
-                                
-
-                            }
-                            
-                            
+                    VStack(alignment: .trailing, spacing: 20){
+                        PersonButton(personName: "Mariana S", accountType: "Mariana S R", accountNumber: "1234 5678 9123 4567 8910", imgColor: "9381FF") {
+                            // Acción al presionar el botón para Cristina Hdz
+                            print("Se ha presionado el botón de Mariana S")
                         }
-                        Spacer()
+                        PersonButton(personName: "Cristina Hdz", accountType: "Cristina H P", accountNumber: "5678 9123 4567 8910 1234", imgColor: "FFC43D") {
+                            // Acción al presionar el botón para Cristina Hdz
+                            print("Se ha presionado el botón de Cristina Hdz")
+                        }
+                        PersonButton(personName: "Carmina L", accountType: "Carmina L P", accountNumber: "1234 5678 9123 8910 4567", imgColor: "64C9CC") {
+                            // Acción al presionar el botón para Cristina Hdz
+                            print("Se ha presionado el botón de Carmina L")
+                        }
+                        PersonButton(personName: "Jorge L", accountType: "Jorge L M", accountNumber: "1234 5678  4567 8910 9123", imgColor: "CF5C36") {
+                            // Acción al presionar el botón para Cristina Hdz
+                            print("Se ha presionado el botón de Jorge L")
+                        }
+                        PersonButton(personName: "Aaron I", accountType: "Aaron I I", accountNumber: "4567 1234 5678 9123 8910", imgColor: "E6CCBE") {
+                            // Acción al presionar el botón para Cristina Hdz
+                            print("Se ha presionado el botón de Aaron I")
+                        }
+                        
                     }
-                    .frame(width: 350)
+                    .padding(.horizontal, 40)
+                    
+                    
                 }
                 
                 
@@ -168,6 +151,63 @@ struct NewEvent: View {
     }
     
 }
+
+
+struct PersonButton: View {
+    let personName: String
+    let accountType: String
+    let accountNumber: String
+    let imgColor: String
+    let action: () -> Void
+    
+    @State private var isPressed = false
+    
+    var body: some View {
+        HStack {
+            Button(action: {
+                self.isPressed = true
+                self.action()
+                
+            }) {
+                HStack {
+                    Image(systemName: "person.fill")
+                        .font(.title)
+                        .foregroundColor(Color.white)
+                        .frame(width: 50, height: 50)
+                        .background(Color(hex: imgColor))
+                        .clipShape(Circle())
+                    Spacer()
+                        .frame(width: 15)
+                    VStack(alignment: .leading) {
+                        Text(personName)
+                            .font(.system(size: 18, weight: .medium))
+                            .foregroundStyle(Color.black)
+                        
+                        Text(accountType)
+                            .font(.system(size: 16, weight: .light))
+                            .textCase(.uppercase)
+                            .foregroundStyle(Color.black)
+                        Spacer()
+                            .frame(height: 10)
+                        Text("Cuenta BBVA")
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundStyle(Color.gray)
+                        Text(accountNumber)
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundStyle(Color.black)
+                    }
+                }
+            }
+            .background(isPressed ? Color(hex: "ebebeb") :Color.white)
+            .disabled(isPressed)
+            Spacer()
+        }
+        
+    }
+}
+
+
+
 
 #Preview {
     NewEvent()
