@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156612BD960F700965B49 /* RetoBBVAApp.swift */; };
+		FBB156642BD960F700965B49 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156632BD960F700965B49 /* ChatView.swift */; };
+		FBB156662BD960F900965B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB156652BD960F900965B49 /* Assets.xcassets */; };
+		FBB156692BD960F900965B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB156682BD960F900965B49 /* Preview Assets.xcassets */; };
+		FBB156722BD9677D00965B49 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156712BD9677C00965B49 /* DataAPI.swift */; };
+		FBB156742BD967AE00965B49 /* APIOpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156732BD967AE00965B49 /* APIOpenAI.swift */; };
+		FBB156772BD9685700965B49 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBB156762BD9685700965B49 /* ChatGPTSwift */; };
+		FBB156792BD9689100965B49 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156782BD9689100965B49 /* Message.swift */; };
+		FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1567A2BD96ADD00965B49 /* MessageView.swift */; };
+		FBB1567D2BD96B3800965B49 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1567C2BD96B3800965B49 /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBB1565E2BD960F700965B49 /* RetoBBVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoBBVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB156612BD960F700965B49 /* RetoBBVAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetoBBVAApp.swift; sourceTree = "<group>"; };
+		FBB156632BD960F700965B49 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FBB156652BD960F900965B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB156682BD960F900965B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBB156712BD9677C00965B49 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
+		FBB156732BD967AE00965B49 /* APIOpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOpenAI.swift; sourceTree = "<group>"; };
+		FBB156782BD9689100965B49 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FBB1567A2BD96ADD00965B49 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = "RetoBBVA/Preview Content/MessageView.swift"; sourceTree = SOURCE_ROOT; };
+		FBB1567C2BD96B3800965B49 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB1565B2BD960F700965B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB156772BD9685700965B49 /* ChatGPTSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB156552BD960F700965B49 = {
+			isa = PBXGroup;
+			children = (
+				FBB156602BD960F700965B49 /* RetoBBVA */,
+				FBB1565F2BD960F700965B49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB1565F2BD960F700965B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB1565E2BD960F700965B49 /* RetoBBVA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB156602BD960F700965B49 /* RetoBBVA */ = {
+			isa = PBXGroup;
+			children = (
+				FBB156702BD966FA00965B49 /* API */,
+				FBB1566F2BD966E200965B49 /* View */,
+				FBB156612BD960F700965B49 /* RetoBBVAApp.swift */,
+				FBB156652BD960F900965B49 /* Assets.xcassets */,
+				FBB156672BD960F900965B49 /* Preview Content */,
+				FBB1567C2BD96B3800965B49 /* Colors.swift */,
+			);
+			path = RetoBBVA;
+			sourceTree = "<group>";
+		};
+		FBB156672BD960F900965B49 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBB156682BD960F900965B49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBB1566F2BD966E200965B49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBB156632BD960F700965B49 /* ChatView.swift */,
+				FBB1567A2BD96ADD00965B49 /* MessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBB156702BD966FA00965B49 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FBB156712BD9677C00965B49 /* DataAPI.swift */,
+				FBB156732BD967AE00965B49 /* APIOpenAI.swift */,
+				FBB156782BD9689100965B49 /* Message.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB1565D2BD960F700965B49 /* RetoBBVA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB1566C2BD960F900965B49 /* Build configuration list for PBXNativeTarget "RetoBBVA" */;
+			buildPhases = (
+				FBB1565A2BD960F700965B49 /* Sources */,
+				FBB1565B2BD960F700965B49 /* Frameworks */,
+				FBB1565C2BD960F700965B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetoBBVA;
+			packageProductDependencies = (
+				FBB156762BD9685700965B49 /* ChatGPTSwift */,
+			);
+			productName = RetoBBVA;
+			productReference = FBB1565E2BD960F700965B49 /* RetoBBVA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB156562BD960F700965B49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					FBB1565D2BD960F700965B49 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = FBB156592BD960F700965B49 /* Build configuration list for PBXProject "RetoBBVA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBB156552BD960F700965B49;
+			packageReferences = (
+				FBB156752BD9685700965B49 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
+			productRefGroup = FBB1565F2BD960F700965B49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB1565D2BD960F700965B49 /* RetoBBVA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB1565C2BD960F700965B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB156692BD960F900965B49 /* Preview Assets.xcassets in Resources */,
+				FBB156662BD960F900965B49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB1565A2BD960F700965B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */,
+				FBB156742BD967AE00965B49 /* APIOpenAI.swift in Sources */,
+				FBB156642BD960F700965B49 /* ChatView.swift in Sources */,
+				FBB1567D2BD96B3800965B49 /* Colors.swift in Sources */,
+				FBB156792BD9689100965B49 /* Message.swift in Sources */,
+				FBB156722BD9677D00965B49 /* DataAPI.swift in Sources */,
+				FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBB1566A2BD960F900965B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBB1566B2BD960F900965B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB1566D2BD960F900965B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetoBBVA/Preview Content\"";
+				DEVELOPMENT_TEAM = 9MQSX62K58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itesm.mx.RetoBBVA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBB1566E2BD960F900965B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetoBBVA/Preview Content\"";
+				DEVELOPMENT_TEAM = 9MQSX62K58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itesm.mx.RetoBBVA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB156592BD960F700965B49 /* Build configuration list for PBXProject "RetoBBVA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB1566A2BD960F900965B49 /* Debug */,
+				FBB1566B2BD960F900965B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB1566C2BD960F900965B49 /* Build configuration list for PBXNativeTarget "RetoBBVA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB1566D2BD960F900965B49 /* Debug */,
+				FBB1566E2BD960F900965B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBB156752BD9685700965B49 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBB156762BD9685700965B49 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBB156752BD9685700965B49 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBB156562BD960F700965B49 /* Project object */;
+}
