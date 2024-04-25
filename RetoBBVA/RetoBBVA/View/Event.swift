@@ -92,7 +92,7 @@ struct Event: View {
                     
                     
                     
-                    Button(action: {}){
+                    NavigationLink(destination: AddExpense()){
                         CircleImage(icon: "plus", color: Color(hex: "64C9CC"))
                     }
                     

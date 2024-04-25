@@ -22,13 +22,14 @@ struct TicketView: View {
             
             //Aquí almacenas lo que reconoció del texto
             for observation in observations {
-                let recognizedText = observation.topCandidates(1).first!.string
-                //self.recognizedTexts.append(recognizedText)
-                
-                if (recognizedText.contains("$")){ // o cambiarlo que sea algo con  total
-                    self.recognizedTexts.append(recognizedText)
-                 }
-                print(recognizedTexts)
+                if let recognizedText = observation.topCandidates(1).first?.string {
+                    if let range = recognizedText.range(of: "$") {
+                        let indexAfterDollarSign = recognizedText.index(after: range.lowerBound)
+                        let substringAfterDollar = recognizedText[indexAfterDollarSign...]
+                        self.recognizedTexts.append(String(substringAfterDollar))
+                    }
+                    print(self.recognizedTexts)
+                }
             }
         }
         
@@ -49,7 +50,8 @@ struct TicketView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200, height: 200)
-            Button(action: { 
+                .layoutPriority(1)
+            Button(action: {
                 self.imageTaken = nil
                 self.recognizedTexts = [String]()
             }, label: {
@@ -60,11 +62,10 @@ struct TicketView: View {
             })
             
             // Display info
-            //Text(recognizedTexts)
             List {
-                ForEach(self.recognizedTexts, id: \.self) {
-                    Text ("\($0)")
-                  }
+                if let lastText = self.recognizedTexts.last {
+                    Text(lastText)
+                }
             }
         }
     }
@@ -92,4 +93,3 @@ struct TicketView: View {
 #Preview {
     TicketView()
 }
-

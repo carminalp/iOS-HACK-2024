@@ -12,6 +12,7 @@
 		FB0AE5B22BD9C72200787722 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5B12BD9C72200787722 /* TabMenu.swift */; };
 		FB0AE5B42BD9C74700787722 /* NewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5B32BD9C74700787722 /* NewEvent.swift */; };
 		FB0AE5B62BD9C77500787722 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5B52BD9C77500787722 /* Event.swift */; };
+		FB0AE5B82BD9D3A900787722 /* AddExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5B72BD9D3A900787722 /* AddExpense.swift */; };
 		FB7C19F52BD9A11600F6215F /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C19F42BD9A11600F6215F /* TicketView.swift */; };
 		FB7C19F72BD9AD1F00F6215F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C19F62BD9AD1F00F6215F /* CameraView.swift */; };
 		FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB156612BD960F700965B49 /* RetoBBVAApp.swift */; };
@@ -32,6 +33,7 @@
 		FB0AE5B12BD9C72200787722 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		FB0AE5B32BD9C74700787722 /* NewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEvent.swift; sourceTree = "<group>"; };
 		FB0AE5B52BD9C77500787722 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FB0AE5B72BD9D3A900787722 /* AddExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpense.swift; sourceTree = "<group>"; };
 		FB7C19F42BD9A11600F6215F /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		FB7C19F62BD9AD1F00F6215F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		FBB1565E2BD960F700965B49 /* RetoBBVA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoBBVA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				FB0AE5AF2BD9C6FC00787722 /* Oportunities.swift */,
 				FB0AE5B32BD9C74700787722 /* NewEvent.swift */,
 				FB0AE5B52BD9C77500787722 /* Event.swift */,
+				FB0AE5B72BD9D3A900787722 /* AddExpense.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0AE5B82BD9D3A900787722 /* AddExpense.swift in Sources */,
 				FBB1567B2BD96ADD00965B49 /* MessageView.swift in Sources */,
 				FB0AE5B02BD9C6FC00787722 /* Oportunities.swift in Sources */,
 				FBB156742BD967AE00965B49 /* APIOpenAI.swift in Sources */,
@@ -344,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RetoBBVA/Preview Content\"";
-				DEVELOPMENT_TEAM = 9MQSX62K58;
+				DEVELOPMENT_TEAM = 34G956CANP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan ticket";
@@ -375,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RetoBBVA/Preview Content\"";
-				DEVELOPMENT_TEAM = 9MQSX62K58;
+				DEVELOPMENT_TEAM = 34G956CANP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan ticket";
