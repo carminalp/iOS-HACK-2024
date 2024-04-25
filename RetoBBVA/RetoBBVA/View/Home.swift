@@ -14,7 +14,7 @@ struct Home: View {
             VStack(spacing: 20){
                 CircleImage(icon: "person.fill", color: Color.gray)
                 // Encabezado
-                Text("Buenos días, Cristina")
+                Text("Buenos días, Alberto")
                     .font(.title)
                     .padding()
             }

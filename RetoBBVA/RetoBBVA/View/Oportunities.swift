@@ -21,12 +21,12 @@ struct Oportunities: View {
                             .resizable()
                             .foregroundStyle(Color.white)
                             .frame(width: 75, height: 75)
-                            
                         
                         Text("Crea un evento para poder organizar tus gastos entre amigos")
                             .multilineTextAlignment(.leading)
                             .foregroundStyle(Color.white)
                             .font(.system(size: 22, weight: .medium))
+                        
                         
                         NavigationLink(destination: NewEvent()){  Text("¡Me interesa!")
                                 .foregroundColor(Color.white)

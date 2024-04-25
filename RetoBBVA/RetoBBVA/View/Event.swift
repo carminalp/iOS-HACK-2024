@@ -56,9 +56,7 @@ struct Event: View {
                         
                     }
 
-                    Button(action:{
-                        
-                    }){
+                    NavigationLink(destination: BudgetEvent()){
                         Text("Calcular gastos")
                             .foregroundColor(Color.white)
                             .padding(.horizontal, 20)

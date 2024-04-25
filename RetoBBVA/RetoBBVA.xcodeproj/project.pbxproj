@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB01189C2BD9DD6F00507D86 /* BudgetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB01189B2BD9DD6F00507D86 /* BudgetEvent.swift */; };
+		FB01189E2BD9DE9100507D86 /* TapToPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB01189D2BD9DE9100507D86 /* TapToPay.swift */; };
 		FB0AE5AE2BD9C67000787722 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5AD2BD9C67000787722 /* Home.swift */; };
 		FB0AE5B02BD9C6FC00787722 /* Oportunities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5AF2BD9C6FC00787722 /* Oportunities.swift */; };
 		FB0AE5B22BD9C72200787722 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AE5B12BD9C72200787722 /* TabMenu.swift */; };
@@ -28,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB01189B2BD9DD6F00507D86 /* BudgetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetEvent.swift; sourceTree = "<group>"; };
+		FB01189D2BD9DE9100507D86 /* TapToPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToPay.swift; sourceTree = "<group>"; };
+		FB01189F2BD9DF8400507D86 /* RetoBBVA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetoBBVA.entitlements; sourceTree = "<group>"; };
 		FB0AE5AD2BD9C67000787722 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FB0AE5AF2BD9C6FC00787722 /* Oportunities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oportunities.swift; sourceTree = "<group>"; };
 		FB0AE5B12BD9C72200787722 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
@@ -60,6 +65,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0AE5BB2BD9DB0500787722 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 		FBB156552BD960F700965B49 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,8 @@
 		FBB156602BD960F700965B49 /* RetoBBVA */ = {
 			isa = PBXGroup;
 			children = (
+				FB01189F2BD9DF8400507D86 /* RetoBBVA.entitlements */,
+				FB0AE5BB2BD9DB0500787722 /* Songs */,
 				FBB156702BD966FA00965B49 /* API */,
 				FBB1566F2BD966E200965B49 /* View */,
 				FBB156612BD960F700965B49 /* RetoBBVAApp.swift */,
@@ -110,6 +124,8 @@
 				FB0AE5B32BD9C74700787722 /* NewEvent.swift */,
 				FB0AE5B52BD9C77500787722 /* Event.swift */,
 				FB0AE5B72BD9D3A900787722 /* AddExpense.swift */,
+				FB01189B2BD9DD6F00507D86 /* BudgetEvent.swift */,
+				FB01189D2BD9DE9100507D86 /* TapToPay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,10 +225,12 @@
 				FB7C19F72BD9AD1F00F6215F /* CameraView.swift in Sources */,
 				FB0AE5B42BD9C74700787722 /* NewEvent.swift in Sources */,
 				FBB156642BD960F700965B49 /* ChatView.swift in Sources */,
+				FB01189C2BD9DD6F00507D86 /* BudgetEvent.swift in Sources */,
 				FBB1567D2BD96B3800965B49 /* Colors.swift in Sources */,
 				FB0AE5B22BD9C72200787722 /* TabMenu.swift in Sources */,
 				FBB156792BD9689100965B49 /* Message.swift in Sources */,
 				FBB156722BD9677D00965B49 /* DataAPI.swift in Sources */,
+				FB01189E2BD9DE9100507D86 /* TapToPay.swift in Sources */,
 				FB0AE5B62BD9C77500787722 /* Event.swift in Sources */,
 				FBB156622BD960F700965B49 /* RetoBBVAApp.swift in Sources */,
 			);
@@ -345,10 +363,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RetoBBVA/RetoBBVA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RetoBBVA/Preview Content\"";
-				DEVELOPMENT_TEAM = 34G956CANP;
+				DEVELOPMENT_TEAM = 4R4PJK8UFG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan ticket";
@@ -363,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itesm.mx.RetoBBVA;
+				PRODUCT_BUNDLE_IDENTIFIER = taptopay.bb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -376,10 +395,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RetoBBVA/RetoBBVA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RetoBBVA/Preview Content\"";
-				DEVELOPMENT_TEAM = 34G956CANP;
+				DEVELOPMENT_TEAM = 4R4PJK8UFG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan ticket";
@@ -394,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = itesm.mx.RetoBBVA;
+				PRODUCT_BUNDLE_IDENTIFIER = taptopay.bb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
